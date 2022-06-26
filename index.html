@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Map</title>
+</head>
+<body>
+    <form>
+        <label for="pinCode">Type the Pin Code you want to locate : </label>
+        <input type="text" id="pinCode">
+        <input type="submit" value="go" onclick="pointToAddress(event)">
+    </form>
+    <div id="map">Loading...</div>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpZOaHuUO1l2nsyIAM5GmP9w8zI-x6MGY&callback=initMap">
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
